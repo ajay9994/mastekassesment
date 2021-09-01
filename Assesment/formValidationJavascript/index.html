@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="formdata">
+        <h1>Form Validation</h1>
+        <form action="welcome.html" method="get" onsubmit="return validateForm()">
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+                <span style="color: red;" id="firstNameError"></span><br><br>
+            
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+                <span style="color: red;" id="lastNameError"></span><br><br>
+           
+                <label for="male">Gender</label>
+                <input type="radio" checked id="male" name="gender" value="male">
+                <label for="male">M</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">F</label><br><br>
+
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                </select><br><br>
+
+                <label for="hobbies">Hobbies</label>
+                <input type="checkbox" chec id="hobbie" name="hobbie" value="Reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="hobbie" name="hobbie" value="Dancing">
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" id="hobbie" name="hobbie" value="Singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" id="hobbie" name="hobbie" value="Sports">
+                <label for="sports">Sports</label>
+                <span style="color: red;" id="HobbiesError"></span><br><br>
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <span style="color: red;" id="emailError"></span><br><br>
+
+                <label for="pno">Phone No</label>
+                <input type="text" name="pno" id="pno">
+                <span style="color: red;" id="pnoError"></span><br><br>
+
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
